@@ -12,28 +12,28 @@
 </head>
 <body>
     <div class="container"> 
-        <form action="" id="formulario">
+        <form action="" id="formulario" onsubmit="return msgErro()" method="post" required>
             <h1 class="titulo">Lean Cadastro</h1>
-            <div class="msg_erro ocultar">É necessário preencher todas as caixas</div>
+            <div id="erro"></div>
             <div class="form_grupo_input">
                 <div class="form_input_titulo">Nome Completo</div>
-                <input type="text" class="form_input" autofocus></input>
+                <input type="text" class="form_input" id="nome" autofocus></input>
             </div>
             <div class="form_grupo_input">
                 <div class="form_input_titulo">CPF (apenas números)</div>
-                <input type="text" class="form_input" autofocus></input>
+                <input type="text" class="form_input" id="cpf"></input>
             </div>
             <div class="form_grupo_input">
                 <div class="form_input_titulo">Telefone (apenas números)</div>
-                <input type="text" class="form_input" autofocus></input>
+                <input type="text" class="form_input" id="telefone"></input>
             </div>
             <div class="form_grupo_input">
                 <div class="form_input_titulo">E-mail</div>
-                <input type="text" class="form_input" autofocus></input>
+                <input type="text" class="form_input" id="email"></input>
             </div>
             <div class="botoes">
                 <button class="botao-cadastrar" type="submit">Cadastrar</button>
-                <button class="botao-listar" href="desafio-front-end\public\lista.html" id="linkListar">Listar dados</button>
+                <button class="botao-listar" href="./lista" id="botaoListar">Listar dados</button>
             </div>
             
 

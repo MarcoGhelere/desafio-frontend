@@ -20,13 +20,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-  /* margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
 .container{
@@ -41,17 +34,13 @@ body {
 
 }
 
-.ocultar{
-    display: none;
-}
-
 .titulo{
     font: 700 'Rubik', sans-serif;
     margin-bottom: 3rem;
     text-align: center;
 }
 
-.msg_erro{
+#erro{
     color: red;
     margin-bottom: 1rem;
 }
