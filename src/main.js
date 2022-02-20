@@ -1,3 +1,25 @@
+const nomeInput = document.getElementById("nome");
+const cpfInput = document.getElementById("cpf");
+const foneInput = document.getElementById("telefone");
+const emailInput = document.getElementById("email");
+
+const botaoCadastrar = document.getElementById("botaoCadastrar");
+
+botaoCadastrar.onclick = function () {
+    var nome = nomeInput.value;
+    var cpf = cpfInput.value;
+    var fone = foneInput.value;
+    var email = emailInput.value;
+
+    window.localStorage.setItem("nome", nome);
+    window.localStorage.setItem("cpf", cpf);
+    window.localStorage.setItem("fone", fone);
+    window.localStorage.setItem("email", email);
+        
+}
+
+
+
 function msgErro(){
     var validarNome = document.forms["formulario"]["nome"].value;
     var validarCPF = document.forms["formulario"]["cpf"].value;
